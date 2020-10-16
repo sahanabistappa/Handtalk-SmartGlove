@@ -16,7 +16,7 @@ void setup()
     lcd.setCursor(0,0);
     lcd.print("Welcome");
     Serial.println("AT+CMGF=1"); //set GSM to text mode
-    pinMode(6, OUTPUT); //check this
+    pinMode(6, OUTPUT); 
     digitalWrite(6, LOW); // buzzer
 }
 
@@ -36,7 +36,6 @@ void loop()
     int value4;
     char* values[4];
     // Message with a good checksum received, dump it.
-    //idk what that above comment means, I took off a famous example
     //Print the values, just to test:
     Serial.print("Values: ");
     Serial.println((char*)buf);  
@@ -46,18 +45,6 @@ void loop()
     value3 = int(values[2]);
     value4 = int(values[3]);      
   }
-  //if that receiver code doesn't work, try this:
-  //this code is v unreliable, pls try to not use this
-  //char* values;
-  //uint8_t count;
- 
-  //vw_get_message(values, &count));
-  //Serial.println(values);
-  //this is just assigning the values
-  //value1 = int(values[0]);
-  //value2 = int(values[1]);
-  //value3 = int(values[2]);
-  //value4 = int(values[3]);
 
   if(value1 >80 && value1<180 && value2>80 && value2<180 && value3>80 && value3< 180 && value4>80 && value4<180)
   {
