@@ -1,4 +1,4 @@
-# HandTalk
+# HandTalk - Smart Glove 
 HandTalk is an Arduino based ASL sign detection and emergency contact system meant for differently abled people who need constant medical attention.
 India constitutes 2.4 million deaf and dumb population, which holds the 20% of the world's Deaf and Dumb Population. These people lack the amenities that a normal person has. 
 
